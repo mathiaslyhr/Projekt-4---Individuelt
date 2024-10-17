@@ -163,6 +163,17 @@ nav ul li a:hover {
   margin-bottom: 20px; /* Afstand mellem boksene */
 }
 
+.centered-box {
+  background-color: white; /* Hvid baggrund for boksene */
+  width: 1000px;
+  border-radius: 10px; /* Rundede kanter */
+  align-items: center; /* Centrere indholdet vertikalt */
+  padding: 20px; /* Indvendig afstand */
+  margin-bottom: 20px; /* Afstand mellem boksene */
+  margin: 20px auto; /* Centerer containeren */
+
+}
+
 /* Box styling */
 .filterbox {
   width: 1000px;
