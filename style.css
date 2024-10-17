@@ -1,0 +1,305 @@
+/* Reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homebody {
+  background-image: url('Img/Stadion.jpg'); /* Baggrundsbillede */
+  background-size: cover; /* Får billedet til at dække hele baggrunden */
+  background-position: center; /* Centrerer billedet */
+  background-repeat: no-repeat; /* Forhindrer gentagelse af billedet */
+  background-attachment: fixed; /* Gør baggrundsbilledet fast */
+
+}
+
+/* Styling for body and background */
+body {
+  background-color: #EEEEEE; /* Lys grå baggrund for kampbilletter siden */
+  font-family: 'Inter', serif; /* Sikre fonten er Inter */
+  height: 100vh; /* Sørger for at body fylder hele højden af viewport */
+  margin: 0; /* Fjerner margin */
+}
+
+/* Header styling */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; /* Hvid header */
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo container and placeholder styling */
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  height: 50px; /* Tilpas højden af logoet */
+}
+
+
+
+/* Styling for horizontal menu aligned to the right */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Sort skrift på menupunkter */
+  font-size: 16px;
+  position: relative;
+  font-family: 'Inria Serif', serif; /* Ændret til Inria Serif */
+  font-weight: 300; /* Indstillet til light */
+}
+
+nav ul li a:hover {
+  color: #0C172D; /* Farveændring ved hover */
+}
+
+.search-container {
+    display: flex; /* Brug flexbox til at arrangere input og knap */
+    flex-direction: column; /* Arranger dem lodret */
+    align-items: center; /* Centrere indholdet horisontalt */
+    justify-content: center; /* Centrere indholdet vertikalt */
+    position: absolute; /* Gør det muligt at placere det præcist */
+    top: 75%; /* Placerer det i midten af siden */
+    left: 50%; /* Centerer det horisontalt */
+    transform: translate(-50%, -50%); /* Justerer for at centrere korrekt */
+}
+
+.search-bar {
+  width: 450px; /* Bredde af søgefeltet */
+  padding: 10px; /* Indvendig afstand */
+  border: 0px solid #ccc; /* Grå kant */
+  border-radius: 5px; /* Rundede kanter */
+  font-size: 12px; /* Mindre skriftstørrelse */
+}
+
+.search-button {
+  display: none; /* Skjuler knappen */
+}
+
+
+/* Overskrift styling */
+.overskrift {
+  text-align: center;
+  font-size: 64px;
+  color: #0C172D; /* Mørk farve til overskriften */
+  margin-top: 75px; /* Justeret afstand fra toppen */
+}
+
+
+
+/* Styling for datoboksen */
+.date-box {
+  background-color: #0C172D; /* Blå baggrund */
+  width: 114px; /* Juster bredden til ønsket størrelse */
+  height: 40px; /* Højde af boks */
+  border-radius: 10px; /* Rundede kanter */
+  display: flex; /* Flexbox til at centrere indholdet */
+  align-items: center; /* Vertikal centrering */
+  justify-content: center; /* Horisontal centrering */
+}
+
+/* Styling for "Sorter efter:" tekst */
+.sort {
+  font-size: 16px; /* Størrelse på teksten */
+  color: black; /* Sort tekst */
+  margin-right: 20px; /* Afstand mellem tekst og boks */
+}
+
+
+/* Container for bokse */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Gør det muligt for bokse at bryde til næste række */
+  justify-content: space-between; /* Justerer bokse med plads imellem */
+  margin: 0 auto; /* Centerer containeren */
+  max-width: 1200px; /* Maksimal bredde for containeren */
+  padding: 20px; /* Indvendig afstand for containeren */
+}
+
+/* Box styling for halve bokse */
+.box-half {
+  background-color: white; /* Hvid baggrund for boksene */
+  width: calc(48% - 10px); /* Halv bredde minus margin */
+  height: 80px; /* Juster højden som ønskes */
+  border-radius: 10px; /* Rundede kanter */
+  display: flex;
+  justify-content: space-between; /* Placerer indholdet med plads imellem */
+  align-items: center; /* Centrere indholdet vertikalt */
+  padding: 10px; /* Indvendig afstand */
+  margin-bottom: 20px; /* Afstand mellem boksene */
+}
+
+
+/* Box styling */
+.box {
+  background-color: white; /* Hvid baggrund for boksene */
+  width: 1000px;
+  height: 100px;
+  border-radius: 10px; /* Rundede kanter */
+  display: flex;
+  justify-content: space-between; /* Placerer indholdet med plads imellem */
+  align-items: center; /* Centrere indholdet vertikalt */
+  padding: 20px; /* Indvendig afstand */
+  margin-bottom: 20px; /* Afstand mellem boksene */
+}
+
+/* Box styling */
+.filterbox {
+  width: 1000px;
+  height: 100px;
+  border-radius: 10px; /* Rundede kanter */
+  display: flex;
+  justify-content: flex-end; /* Placerer indholdet til højre */
+  align-items: center; /* Centrere indholdet vertikalt */
+  padding: 20px; /* Indvendig afstand */
+  margin-bottom: 20px; /* Afstand mellem boksene */
+}
+
+
+/* Detaljer boks */
+.details {
+  display: flex;
+  flex-direction: column; /* For at stable dato og kamp lodret */
+}
+
+/* Lille blå boks til pris */
+.price {
+  background-color: #0C172D; /* Blå baggrund for pris */
+  width: 114px;
+  color: white; /* Hvid tekst */
+  padding: 10px; /* Indvendig afstand */
+  border-radius: 10px; /* Rundede kanter */
+  height: 40px; /* Højde på den lille boks */
+  display: flex; /* For at centrere teksten inden i */
+  align-items: center; /* Vertikal centrering */
+  justify-content: center; /* Horisontal centrering */
+  margin-left: auto; /* Placerer prisen til højre */
+  font-weight: 300; /* Justeret til light font */
+}
+
+/* Dato tekst styling */
+.date {
+  color: #0C172D; /* Sort tekst */
+  font-size: 16px; /* Størrelse for dato teksten */
+}
+
+.datelight {
+  color: white; /* Sort tekst */
+  font-size: 16px; /* Størrelse for dato teksten */
+}
+
+/* Match tekst */
+.match {
+  font-size: 32px; /* Størrelse for match teksten */
+  color: #0C172D; /* Mørk farve til match teksten */
+}
+
+/* Styling for the form page */
+.form-page .white-box {
+  background-color: white;
+  width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering the form content */
+  width: 100%;
+}
+
+/* Align Fødselsdag and Mail præferencer side by side */
+.form-row {
+  display: flex;
+  gap: 10px; /* Reduced gap to bring boxes closer together */
+  width: 100%;
+  justify-content: center; /* Center the row of inputs */
+}
+
+.form-row .form-group {
+  flex: 1; /* Make the fields take equal space */
+  max-width: 195px; /* Adjust max width for both fields to fit neatly */
+}
+
+/* Styling for other elements remains unchanged */
+.form-heading {
+  color: #0C172D;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 400px; /* Set max width for email input */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.input-email,
+.input-small {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 400px;
+  padding: 10px;
+  background-color: #0C172D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.terms {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}

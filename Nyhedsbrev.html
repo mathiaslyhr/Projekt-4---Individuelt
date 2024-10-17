@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Senria&display=swap" rel="stylesheet"> <!-- Tilføjer Senria font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&display=swap" rel="stylesheet">
+    <title>Nyhedsbrev</title>
+</head>
+<body class="form-page">
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="Img/Logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Voresmission.html">Vores mission</a></li>
+                <li><a href="Kontakter.html">Kontakter</a></li>
+                <li><a href="Anmeldelser.html">Anmeldelser</a></li>
+                <li><a href="Nyhedsbrev.html">Nyhedsbrev</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="white-box">
+        <h1 class="form-heading">Bliv den første til, at få nyheder!</h1>
+        <p class="subtext">Tilmeld dig Fodboldture e-mails og bliv den første til, at se nyheder på kampbilletter, flybilletter og eksklusive tilbud.</p>
+        
+        <form class="newsletter-form">
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Indtast din email" class="input-email">
+            </div>
+
+            <!-- Fødselsdag and Mail præferencer Fields Side by Side -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="birthday">Fødselsdag</label>
+                    <input type="date" id="birthday" class="input-small">
+                </div>
+                <div class="form-group">
+                    <label for="preferences">Mail præferencer</label>
+                    <select id="preferences" class="input-small">
+                        <option value="Nyheder">Nyheder</option>
+                        <option value="Kampbilletter">Kampbilletter</option>
+                        <option value="Fly og rejser">Fly og rejser</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">TILDMELD DIG</button>
+        </form>
+
+        <p class="subtext terms">
+            Ved at tilmelde dig vores nyhedsbrev, accepterer du Fodboldtures 
+            <span class="underline">Vilkår for brug</span> og 
+            <span class="underline">Privatlivspolitik</span>.
+        </p>
+    </div>
+</body>
+</html>
